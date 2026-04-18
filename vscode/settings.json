@@ -1,0 +1,237 @@
+{
+  /**
+   * VIM
+   */
+  "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": true,
+  "vim.incsearch": true,
+  "vim.hlsearch": true,
+  "vim.ignorecase": true,
+  "vim.smartcase": true,
+  "vim.highlightedyank.enable": true,
+  "vim.smartRelativeLine": true,
+  "vim.surround": true,
+  "vim.easymotion": true,
+  "vim.searchHighlightColor": "#fabd2f66",
+  "vim.searchHighlightTextColor": "#1d2021",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-n>": false,
+    "<C-p>": false,
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<Esc>"],
+      "commands": [":nohl"],
+      "silent": true,
+    },
+  ],
+
+  /**
+   * PERFORMANCE
+   */
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1,
+  },
+
+  /**
+   * THEME / UI
+   */
+  "workbench.colorTheme": "Gruvbox Dark (Medium)",
+  "workbench.iconTheme": "material-icon-theme",
+  "window.systemColorTheme": "dark",
+  "window.title": " ",
+  "workbench.activityBar.location": "top",
+  "workbench.tips.enabled": false,
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+
+  "editor.fontSize": 14,
+  "editor.lineHeight": 22,
+  "editor.fontFamily": "JetBrains Mono, Fira Code, Courier New, monospace",
+  "editor.fontLigatures": true,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.verticalScrollbarSize": 12,
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.icons": false,
+  "breadcrumbs.symbolPath": "off",
+
+  "window.density.editorTabHeight": "compact",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.empty.hint": "hidden",
+
+  "workbench.colorCustomizations": {
+    "editorOverviewRuler.border": "#00000000",
+    "editorOverviewRuler.findMatchForeground": "#fabd2f88",
+    "editorOverviewRuler.rangeHighlightForeground": "#00000000",
+    "editorOverviewRuler.selectionHighlightForeground": "#00000000",
+    "editorOverviewRuler.wordHighlightForeground": "#00000000",
+    "editorOverviewRuler.wordHighlightStrongForeground": "#00000000",
+    "editorOverviewRuler.modifiedForeground": "#83a59855",
+    "editorOverviewRuler.addedForeground": "#b8bb2655",
+    "editorOverviewRuler.deletedForeground": "#fb493455",
+    "editorOverviewRuler.infoForeground": "#00000000",
+    "editorOverviewRuler.bracketMatchForeground": "#00000000",
+  },
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "italic font",
+        "scope": [
+          "comment",
+          "keyword",
+          "storage",
+          "keyword.control",
+          "keyword.control.from",
+          "keyword.control.flow",
+          "keyword.operator.new",
+          "keyword.control.import",
+          "keyword.control.export",
+          "keyword.control.default",
+          "keyword.control.trycatch",
+          "keyword.control.conditional",
+          "storage.type",
+          "storage.type.class",
+          "storage.modifier.tsx",
+          "storage.type.function",
+          "storage.modifier.async",
+          "variable.language",
+          "variable.language.this",
+          "variable.language.super",
+          "meta.class",
+          "meta.var.expr",
+          "constant.language.null",
+          "support.type.primitive",
+          "entity.name.method.js",
+          "entity.other.attribute-name",
+          "punctuation.definition.comment",
+          "text.html.basic entity.other.attribute-name",
+          "tag.decorator.js entity.name.tag.js",
+          "tag.decorator.js punctuation.definition.tag.js",
+          "source.js constant.other.object.key.js string.unquoted.label.js",
+        ],
+        "settings": {
+          "fontStyle": "italic",
+        },
+      },
+    ],
+  },
+
+  /**
+   * EDITOR
+   */
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "files.autoSave": "onWindowChange",
+  "search.useIgnoreFiles": true,
+  "search.smartCase": true,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmPasteNative": false,
+
+  /**
+   * LANGUAGE
+   */
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferGoToSourceDefinition": true,
+  "typescript.preferGoToSourceDefinition": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "debug.javascript.autoAttachFilter": "onlyWithFlag",
+  "gopls": {
+    "ui.semanticTokens": true,
+  },
+  "[go.mod]": {
+    "editor.defaultFormatter": "golang.go",
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+  },
+  "go.toolsManagement.autoUpdate": true,
+
+  /**
+   * EXTENSIONS
+   */
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "gitlens.defaultGravatarsStyle": "retro",
+  "gitlens.plusFeatures.enabled": false,
+  "gitlens.codeLens.enabled": false,
+
+  "cSpell.spellCheckDelayMs": 350,
+  "cSpell.textDecorationColor": "lightblue",
+  "cSpell.overviewRulerColor": "",
+  "cSpell.suggestionsTimeout": 500,
+
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+  ],
+
+  "auto-close-tag.activationOnLanguage": [
+    "html",
+    "javascriptreact",
+    "typescriptreact",
+  ],
+
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  /**
+   * TERMINAL
+   */
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "JetBrains Mono, Fira Code",
+  "terminal.integrated.scrollback": 5000,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.commandsToSkipShell": ["workbench.action.closePanel"],
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "path": "pwsh",
+      "icon": "terminal-powershell",
+    },
+  },
+  "terminal.integrated.env.windows": {
+    "PATH": "${env:PATH};${workspaceRoot}\\node_modules\\.bin;${env:PNPM_HOME}",
+  },
+
+  /**
+   * GIT
+   */
+  "git.openRepositoryInParentFolders": "always",
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autoStash": true,
+  "git.autofetch": true,
+
+  /**
+   * NOISE REDUCTION
+   */
+  "extensions.ignoreRecommendations": true,
+  "settingsSync.keybindingsPerPlatform": false,
+  "telemetry.telemetryLevel": "off",
+  "telemetry.feedback.enabled": false,
+  "security.workspace.trust.banner": "never",
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.workspace.trust.startupPrompt": "never",
+  "security.workspace.trust.enabled": false,
+  "editor.accessibilitySupport": "off",
+  "chat.agent.enabled": false,
+  "inlineChat.lineNaturalLanguageHint": false,
+
+  /**
+   * ZEN / STARTUP
+   */
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+}
