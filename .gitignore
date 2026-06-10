@@ -1,0 +1,10 @@
+# Local secrets and environment files
+secrets.zsh
+.env
+.env.*
+*.pem
+*.key
+
+# OS/editor noise
+.DS_Store
+*.swp
